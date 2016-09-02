@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'stories_controller/new'
+
+  get 'stories_controller/create'
+
+  get 'stories_controller/update'
+
+  get 'stories_controller/edit'
+
+  get 'stories_controller/destroy'
+
+  get 'stories_controller/index'
+
+  get 'stories_controller/show'
+
   get 'messages_controller/new'
 
   get 'messages_controller/create'
