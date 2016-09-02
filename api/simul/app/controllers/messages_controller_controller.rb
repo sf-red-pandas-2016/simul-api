@@ -1,4 +1,5 @@
 class MessagesControllerController < ApplicationController
+
   def new
   end
 

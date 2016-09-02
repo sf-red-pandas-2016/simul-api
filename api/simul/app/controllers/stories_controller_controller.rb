@@ -1,4 +1,5 @@
 class StoriesControllerController < ApplicationController
+
   def new
   end
 

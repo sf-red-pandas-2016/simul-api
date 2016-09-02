@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'sessions_controller/new'
+
+  get 'sessions_controller/create'
+
   get 'stories_controller/new'
 
   get 'stories_controller/create'
@@ -36,6 +40,8 @@ Rails.application.routes.draw do
   get 'users_controller/index'
 
   get 'users_controller/show'
+
+  
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
