@@ -1,47 +1,13 @@
 Rails.application.routes.draw do
-  get 'sessions_controller/new'
 
-  get 'sessions_controller/create'
-
-  get 'stories_controller/new'
-
-  get 'stories_controller/create'
-
-  get 'stories_controller/update'
-
-  get 'stories_controller/edit'
-
-  get 'stories_controller/destroy'
-
-  get 'stories_controller/index'
-
-  get 'stories_controller/show'
-
-  get 'messages_controller/new'
-
-  get 'messages_controller/create'
-
-  get 'messages_controller/destroy'
-
-  get 'messages_controller/index'
-
-  get 'messages_controller/show'
-
-  get 'users_controller/new'
-
-  get 'users_controller/create'
-
-  get 'users_controller/update'
-
-  get 'users_controller/edit'
-
-  get 'users_controller/destroy'
-
-  get 'users_controller/index'
-
-  get 'users_controller/show'
-
-  
+  namespace :api do
+    post   'login'   => 'sessions#create'
+    delete 'logout'  => 'sessions#destroy'
+    get    'verify'  => 'sessions#verify_access_token'
+    resources :users, param: :access_token
+    resources :stories
+    resources :messages, except: [:update, :edit]
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
