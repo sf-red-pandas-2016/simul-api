@@ -31,7 +31,10 @@ describe User do
       expect(user.errors[:location]).to include("Location can't be blank")
     end
 
-
+    it "is invalid when parameter is not unique" do
+      invalid_user.valid?
+      expect(user.errors[:username]).to include("ERROR MESSAGE")
+    end
 
   end
 
