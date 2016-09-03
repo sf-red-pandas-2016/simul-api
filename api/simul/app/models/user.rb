@@ -1,3 +1,5 @@
+require 'bcrypt'
+
 class User < ApplicationRecord
   has_many :messages
   has_many :stories
@@ -6,7 +8,8 @@ class User < ApplicationRecord
 
   validates :name, :username, :location, presence: true
   validates :username, uniqueness: true
-  # validates :password, length: { minimum: 6 }
+  validates :password, length: { minimum: 6 }
+  has_secure_password
 
   # Creates random token
   def User.new_token
