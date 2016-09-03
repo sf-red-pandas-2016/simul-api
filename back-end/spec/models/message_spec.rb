@@ -8,6 +8,17 @@ describe Message do
                               subject: 'whoknows',
                               content: 'nobody',)
                             }
-  let(:invalid_message) { Message.new(user_id: rand(1..10)}
+  let(:invalid_message) { Message.new(user_id: rand(1..10))}
+
+  context Message do
+    it "is valid with all parameters filled out" do
+      message.valid?
+      expect(message.errors[:message]).to be_empty
+    end
+  end
+
+    # it "is invalid when missing a required parameter" do
+
+    # end
 
 end
