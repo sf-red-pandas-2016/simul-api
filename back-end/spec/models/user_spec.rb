@@ -31,10 +31,11 @@ describe User do
       expect(invalid_user.errors[:location]).to include("can't be blank")
     end
 
-    # it "is invalid when parameter is not unique" do
-    #   invalid_user.valid?
-    #   expect(user.errors[:username]).to include("ERROR MESSAGE")
-    # end
+    it "is invalid when parameter is not unique" do
+      user.save
+      invalid_user.save
+      expect(invalid_user.errors[:username]).to include("has already been taken")
+    end
 
   end
 
