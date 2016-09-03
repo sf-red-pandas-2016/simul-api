@@ -1,4 +1,4 @@
-class MessagesControllerController < ApplicationController
+class Api::MessagesController < ApplicationController
 
   def new
   end
