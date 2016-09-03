@@ -1,9 +1,25 @@
 class StoriesControllerController < ApplicationController
 
+  def index
+    stories = Story.all
+    render json: { stories: stories }
+  end
+
   def new
   end
 
   def create
+    story = Story.create
+    if story.save
+      redirect_to story
+    else
+      render json: { error: story.errors.full_messages }
+    end
+  end
+
+  def show
+    story = Story.find(params[:id])
+    render json: { story: story }
   end
 
   def update
@@ -15,9 +31,4 @@ class StoriesControllerController < ApplicationController
   def destroy
   end
 
-  def index
-  end
-
-  def show
-  end
 end
