@@ -14,14 +14,14 @@ class Api::StoriesController < ApplicationController
       if story.save
         redirect_to story
       else
-        render json: { error: story.errors.full_messages }, status: 200
+        render json: { error: story.errors.full_messages }, status: 422
       end
     end
   end
 
   def show
     story = Story.find(params[:id])
-    render json: { story: story }
+    render json: { story: story }, status: 200
   end
 
   def update
