@@ -1,7 +1,7 @@
 class StoriesControllerController < ApplicationController
 
   def index
-    stories = Story.all
+    stories = Story.where(user_id: params[:user_id])
     render json: { stories: stories }
   end
 
