@@ -40,11 +40,12 @@ class Api::UsersController < ApplicationController
   end
 
   def destroy
-  #  if user.destroy
-  #    render text: "Account has been deleted successfully", status: 200
-  #  else
-  #    render text: "Something went wrong, account has not been deleted", status: 422
-  #  end
+    user = User.find(params[:id])
+   if user.destroy
+     render json: { text: "Account has been deleted successfully" }, status: 200
+   else
+     render json: { error: "Something went wrong, account has not been deleted" }, status: 422
+   end
   end
 
   private
