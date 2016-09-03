@@ -20,7 +20,7 @@ class Api::UsersController < ApplicationController
     user = User.find(params[:id])
     messages = user.messages
     stories = user.stories
-    render json: { user: user, messages: messages, stories: stories }
+    render json: { user: user, messages: messages, stories: stories }, status: 200
   end
 
   def update
@@ -32,11 +32,8 @@ class Api::UsersController < ApplicationController
   end
 
   def edit
-    # if @current_user
-    #   render json: @current_user, only: [:username, :name, :location, :bio, :resource_request, :skills, :seeking, :preferred_contact],  status: 200
-    # else
-    #   render text: "Error, users can only edit themselves", status: 422
-    # end
+    user = User.find(params[:id])
+    render json: user, only: [:username, :name, :location, :bio, :resource_request, :skills, :seeking, :preferred_contact],  status: 200
   end
 
   def destroy
