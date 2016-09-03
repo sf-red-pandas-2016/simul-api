@@ -6,6 +6,7 @@ class Api::UsersController < ApplicationController
   end
 
   def new
+
   end
 
   def create
@@ -40,4 +41,8 @@ class Api::UsersController < ApplicationController
   def destroy
   end
 
+  private
+    def user_params
+      params.require(:user).permit(:username, :name, :location, :bio, :resource_request, :skills, :seeking, :preferred_contact, :password, :password_confirmation)
+    end
 end
