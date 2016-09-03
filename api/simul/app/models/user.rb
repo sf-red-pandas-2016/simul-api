@@ -15,7 +15,9 @@ class User < ApplicationRecord
 
   private
     def generate_access_token
-      self.access_token = User.new_token
+      begin
+        self.access_token = User.new_token
+      end while self.class.exists?(access_token: access_token)
     end
 
 end
