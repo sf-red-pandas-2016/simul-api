@@ -1,6 +1,7 @@
 require 'bcrypt'
 
 class User < ApplicationRecord
+  attr_accessor :reset_token, :remember_token
   has_many :messages
   has_many :stories
 
