@@ -1,0 +1,25 @@
+Started GET "/api/users/3/messages/2" for ::1 at 2016-09-03 15:24:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::MessagesController#show as */*
+  Parameters: {"user_id"=>"3", "id"=>"2"}
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::MessagesController:0x007f948b1f1b08>):
+  
+app/controllers/api/messages_controller.rb:25:in `show'
+Started GET "/api/users/3/messages/2" for ::1 at 2016-09-03 15:27:12 -0700
+Processing by Api::MessagesController#show as */*
+  Parameters: {"user_id"=>"3", "id"=>"2"}
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 22ms (Views: 0.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/users/3/messages" for ::1 at 2016-09-03 15:28:10 -0700
+Processing by Api::MessagesController#index as */*
+  Parameters: {"user_id"=>"3"}
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."user_id" = $1[0m  [["user_id", 3]]
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.7ms)
+
+
