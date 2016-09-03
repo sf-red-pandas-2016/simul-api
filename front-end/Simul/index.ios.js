@@ -9,18 +9,24 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  NavigatorIOS,
   View
 } from 'react-native';
 
 class Simul extends Component {
   render() {
     return (
-      <NavigatorIOS
-        initialRoute = {{
-          title: 'Simul',
-          component: Main
-        }} />
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          SIMUL
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit index.ios.js
+        </Text>
+        <Text style={styles.instructions}>
+          Press Cmd+R to reload,{'\n'}
+          Cmd+D or shake for dev menu
+        </Text>
+      </View>
     );
   }
 }

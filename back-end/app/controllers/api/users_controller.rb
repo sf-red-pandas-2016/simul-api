@@ -29,6 +29,7 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  #NOTE: edit and new routes don't show in rails routes, possibly because of API version
   def edit
     user = User.find(params[:id])
     render json: user, only: [:username, :name, :location, :bio, :resource_request, :skills, :seeking, :preferred_contact],  status: 200
