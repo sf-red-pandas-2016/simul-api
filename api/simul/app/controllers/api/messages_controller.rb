@@ -11,7 +11,6 @@ class MessagesControllerController < ApplicationController
   def create
     message = Message.create
     if message.save
-      login message
       redirect_to message
     else
       render json: { error: message.errors.full_messages }
