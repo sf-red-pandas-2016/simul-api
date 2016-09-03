@@ -22,12 +22,12 @@ class Api::MessagesController < ApplicationController
 
 
   def show
-    if user.id == current_user.id
-      message = Message.find(params[:id])
+    # if user.id == current_user.id
+    message = Message.find(params[:id])
     # if message == current_message
-      render json: { message: message }, status: 200
-    else
-      render json: { error: message.errors.full_messages }, status: 422
-    end
+    render json: { message: message }, status: 200
+    # else
+    #   render json: { error: message.errors.full_messages }, status: 422
+    # end
   end
 end
