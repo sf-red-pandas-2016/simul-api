@@ -8,11 +8,11 @@ class Api::UsersController < ApplicationController
   end
 
   def new
-
+    @current_user = User.new
   end
 
   def create
-    user = User.create
+    user = User.new(user_params)
     if user.save
       #note using json and not text here
       render json: user.access_token, status 201
@@ -42,6 +42,11 @@ class Api::UsersController < ApplicationController
   end
 
   def edit
+    if @current_user
+      render json: @current_user, only: [:username, :name, :location, :bio, :resource_request, :skills, :seeking, :preferred_contact],  status: 200
+    else
+      render text: "Error, users can only edit themselves", status: 422
+    end
   end
 
   def destroy
