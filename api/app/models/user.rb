@@ -28,7 +28,14 @@ class User < ApplicationRecord
     self.remember_token = User.new_token
     update_attribute(:remember_digest, User.digest(remember_token))
   end
-  
+
+  # Returns true if token matches the digest
+  def authenticated?(attribute, token)
+    digest = self.send("#{attribute}_digest")
+    return false if digest.nil?
+    BCrypt::Password.new(digest).is_password?(token)
+  end
+
   private
     def generate_access_token
       begin
