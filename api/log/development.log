@@ -122,3 +122,49 @@ ORDER BY c.conname
   [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."access_token" = $1 LIMIT $2[0m  [["access_token", "lMhOna3eF7qhk0EmCJzIdg"], ["LIMIT", 1]]
   [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "name", "location", "password_digest", "access_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "lala"], ["name", "jasdf"], ["location", "asf"], ["password_digest", "$2a$10$vLXiF.uNiJBIPSgMUqU.W.O9zJ6pMVtTmjrgHKxLLo1HEGmfnw002"], ["access_token", "lMhOna3eF7qhk0EmCJzIdg"], ["created_at", 2016-09-03 04:50:51 UTC], ["updated_at", 2016-09-03 04:50:51 UTC]]
   [1m[35m (12.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2016-09-03 11:00:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"internal"=>true}
+  Rendering /Users/daniellehassid/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/daniellehassid/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 38ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/login" for ::1 at 2016-09-03 11:00:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/api/login"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/api/verify" for ::1 at 2016-09-03 11:01:08 -0700
+  
+ActionController::RoutingError (undefined local variable or method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:11:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:10:in `<top (required)>'
+app/controllers/api/sessions_controller.rb:1:in `<top (required)>'
+Started GET "/api/users/" for ::1 at 2016-09-03 11:01:13 -0700
+  
+SyntaxError (/Users/daniellehassid/devbootcamp/Final_Project/Simul/api/app/controllers/api/users_controller.rb:18: syntax error, unexpected tINTEGER, expecting keyword_do or '{' or '('):
+  
+app/controllers/api/users_controller.rb:18: syntax error, unexpected tINTEGER, expecting keyword_do or '{' or '('
