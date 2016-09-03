@@ -1,4 +1,4 @@
-class StoriesControllerController < ApplicationController
+class Api::StoriesController < ApplicationController
 
   def index
     stories = Story.where(user_id: params[:user_id])

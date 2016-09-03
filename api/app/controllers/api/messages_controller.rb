@@ -1,4 +1,4 @@
-class MessagesControllerController < ApplicationController
+class Api::MessagesController < ApplicationController
 
   def index
     messages = Message.where(user_id: params[:user_id])
