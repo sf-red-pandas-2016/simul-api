@@ -11,7 +11,7 @@ describe Story do
   context Story do
     it "is valid when parameters are complete" do
       story.valid?
-      expect(story.errors{:story}).to be_empty
+      expect(story.errors[:story]).to be_empty
     end
 
     it "is invalid when missing required parameters" do
