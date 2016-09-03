@@ -13,12 +13,21 @@ class UsersControllerController < ApplicationController
     if user.save
       login user
       redirect_to user
-    elsif
+    else
       render json: { error: user.errors.full_messages }
     end
   end
 
   def show
+    user = User.find(params[:id])
+    if user == current_user
+      messages = user.messages
+      stories = user.stories
+      render json: { user: user, messages: messages, stories: stories }
+    else
+      stories = user.stories
+      render json: { user: user, stories: stories }
+    end
   end
 
   def update
