@@ -1,6 +1,6 @@
 # Simul
 Team:
-* @hypatiah - Danielle Hassid \n
-* @justinbryeans - Justin Bryeans \n
-* @omaiki - Oshoke Maiki \n
-* @nitescun - Nicolae Nitescu \n
+* @hypatiah - Danielle Hassid
+* @justinbryeans - Justin Bryeans
+* @omaiki - Oshoke Maiki
+* @nitescun - Nicolae Nitescu
