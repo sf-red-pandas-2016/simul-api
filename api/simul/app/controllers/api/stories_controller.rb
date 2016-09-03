@@ -9,11 +9,13 @@ class StoriesControllerController < ApplicationController
   end
 
   def create
-    story = Story.create
-    if story.save
-      redirect_to story
-    else
-      render json: { error: story.errors.full_messages }
+    if user.id == current_user.id
+      story = Story.create
+      if story.save
+        redirect_to story
+      else
+        render json: { error: story.errors.full_messages }
+      end
     end
   end
 
