@@ -1,7 +1,6 @@
-  [1m[35m (24.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
-  [1m[35m (26.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6474739481771576610);[0m
+Started GET "/api/users/3/messages/2" for ::1 at 2016-09-03 15:24:01 -0700
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+<<<<<<< HEAD
 Migrating to CreateUsers (20160902222335)
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (30.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying NOT NULL, "name" character varying NOT NULL, "location" character varying NOT NULL, "bio" text, "resource_request" character varying, "skills" character varying, "seeking" character varying, "preferred_contact" character varying, "admin" boolean DEFAULT 'f', "password_digest" character varying, "remember_digest" character varying, "access_token" character varying, "reset_digest" character varying, "reset_sent_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
@@ -515,3 +514,28 @@ ORDER BY c.conname
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+=======
+Processing by Api::MessagesController#show as */*
+  Parameters: {"user_id"=>"3", "id"=>"2"}
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::MessagesController:0x007f948b1f1b08>):
+  
+app/controllers/api/messages_controller.rb:25:in `show'
+Started GET "/api/users/3/messages/2" for ::1 at 2016-09-03 15:27:12 -0700
+Processing by Api::MessagesController#show as */*
+  Parameters: {"user_id"=>"3", "id"=>"2"}
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 22ms (Views: 0.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/users/3/messages" for ::1 at 2016-09-03 15:28:10 -0700
+Processing by Api::MessagesController#index as */*
+  Parameters: {"user_id"=>"3"}
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."user_id" = $1[0m  [["user_id", 3]]
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.7ms)
+
+
+>>>>>>> 1933778faedb7efb6a683570cef4c4d566f050b3
