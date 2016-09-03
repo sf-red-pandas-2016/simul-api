@@ -10,13 +10,30 @@ describe User do
                         seeking: 'coding opportunities'
                       }
 
+  let(:invalid_user) { User.new(name: '',
+                        username: 'omaiki',
+                        location: ''
+                        bio: 'no kids'
+                        preferred_contact: 'me@me.com'
+                        skills: 'coding'
+                        seeking: 'coding opportunities'
+                      }
+
   context User do
     it "is valid with all parameters filled out on registration form" do
       user.valid?
       expect(user).to be_valid
     end
 
+    it "is invalid when missing a required parameter" do
+      invalid_user.valid?
+      expect(user.errors[:name]).to include("Name can't be blank")
+      expect(user.errors[:location]).to include("Location can't be blank")
+    end
 
+
+
+  end
 
 
 end
