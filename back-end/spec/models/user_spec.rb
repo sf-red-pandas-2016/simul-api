@@ -1,7 +1,6 @@
 require 'rails-helper'
 
 describe User do
-  context
   let(:user) { User.new(name: 'Oshoke',
                         username: 'omaiki',
                         location: 'San Francisco, CA'
@@ -10,6 +9,16 @@ describe User do
                         skills: 'coding'
                         seeking: 'coding opportunities'
                       }
+
+  context User do
+    it "is valid with all parameters filled out on registration form" do
+      user.valid?
+      expect(user).to be_valid
+    end
+
+
+
+
 end
 
 
