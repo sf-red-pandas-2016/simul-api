@@ -34,6 +34,11 @@ class Api::UsersController < ApplicationController
   end
 
   def update
+    if @current_user.update_attributes(user_params)
+      render text: "Account has been updated successfully", status: 200
+    else
+      render json: @current_user.errors, status: 422
+    end
   end
 
   def edit
@@ -41,7 +46,7 @@ class Api::UsersController < ApplicationController
 
   def destroy
    if user.destroy
-     render text: "Account has been deleted successfuly", status: 200
+     render text: "Account has been deleted successfully", status: 200
    else
      render text: "Something went wrong, account has not been deleted", status: 422
    end
