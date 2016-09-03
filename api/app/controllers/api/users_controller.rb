@@ -1,21 +1,16 @@
 class Api::UsersController < ApplicationController
-
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
-
   def index
     users = User.all
     render json: { users: users }
   end
 
   def new
-    @current_user = User.new
   end
 
   def create
     user = User.new(user_params)
     if user.save
-      #note using json and not text here
-      render json: user.access_token, status 201
+      render json: { user: user }, status 201
     else
       render json: { error: user.errors.full_messages }, status: 422
     end
