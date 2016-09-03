@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
 
   validates :name, :username, :location, presence: true
-  validates :username, uniqueness: true
+  validates :username, uniqueness: true]
   # attr_accessor :reset_token, :remember_token
   # before_create :generate_access_token
   # validates :password, length: { minimum: 6 }
@@ -47,5 +47,4 @@ class User < ApplicationRecord
   #       self.access_token = User.new_token
   #     end while self.class.exists?(access_token: access_token)
   #   end
-
 end
