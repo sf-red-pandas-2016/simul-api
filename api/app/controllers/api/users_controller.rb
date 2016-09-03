@@ -39,6 +39,11 @@ class Api::UsersController < ApplicationController
   end
 
   def destroy
+   if user.destroy
+     render text: "Account has been deleted successfuly", status: 200
+   else
+     render text: "Something went wrong, account has not been deleted", status: 422
+   end
   end
 
   private
