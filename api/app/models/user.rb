@@ -42,6 +42,7 @@ class User < ApplicationRecord
   end
 
   private
+
     def generate_access_token
       begin
         self.access_token = User.new_token
