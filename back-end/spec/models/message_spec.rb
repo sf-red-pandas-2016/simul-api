@@ -17,8 +17,12 @@ describe Message do
     end
   end
 
-    # it "is invalid when missing a required parameter" do
-
-    # end
+    it "is invalid when missing a required parameter" do
+      invalid_message.valid?
+      expect(invalid_message.errors[:author]).to include("can't be blank")
+      expect(invalid_message.errors[:author_contact]).to include("can't be blank")
+      expect(invalid_message.errors[:subject]).to include("can't be blank")
+       expect(invalid_message.errors[:content]).to include("can't be blank")
+    end
 
 end
