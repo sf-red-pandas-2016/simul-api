@@ -2,7 +2,7 @@ class Api::StoriesController < ApplicationController
 
   def index
     stories = Story.where(user_id: params[:user_id])
-    render json: { stories: stories }
+    render json: { stories: stories }, status: 200
   end
 
   def new
@@ -14,7 +14,7 @@ class Api::StoriesController < ApplicationController
       if story.save
         redirect_to story
       else
-        render json: { error: story.errors.full_messages }
+        render json: { error: story.errors.full_messages }, status: 200
       end
     end
   end
