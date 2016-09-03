@@ -24,11 +24,12 @@ class Api::UsersController < ApplicationController
   end
 
   def update
-    # if @current_user.update_attributes(user_params)
-    #   render text: "Account has been updated successfully", status: 200
-    # else
-    #   render json: @current_user.errors, status: 422
-    # end
+    user = User.find(params[:id])
+    if user.update_attributes(user_params)
+      render json: { text: "Account has been updated successfully" }, status: 200
+    else
+      render json: { error: user.errors.full_messages }, status: 422
+    end
   end
 
   def edit
