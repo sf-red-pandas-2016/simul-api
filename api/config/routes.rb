@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
     root 'welcome#index'
-    resources :welcome, only: :index
     resources :users do
       resources :stories
       resources :messages, except: [:update, :edit]
