@@ -11,10 +11,11 @@ class Api::UsersController < ApplicationController
   def create
     user = User.create
     if user.save
-      login user
+      #note using json and not text here
+      render json: user.access_token, status 201
       redirect_to user
     else
-      render json: { error: user.errors.full_messages }
+      render json: { error: user.errors.full_messages }, status: 422
     end
   end
 
