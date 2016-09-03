@@ -36,6 +36,11 @@ class User < ApplicationRecord
     BCrypt::Password.new(digest).is_password?(token)
   end
 
+  # Resets user's remember_digest to nil
+  def forget
+    update_attribute(:remember_digest, nil)
+  end
+
   private
     def generate_access_token
       begin
