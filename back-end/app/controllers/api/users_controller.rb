@@ -4,13 +4,10 @@ class Api::UsersController < ApplicationController
     render json: { users: users }
   end
 
-  def new
-  end
-
   def create
     user = User.new(user_params)
     if user.save
-      render json: { user: user }, status 201
+      render json: { user: user }, status: 201
     else
       render json: { error: user.errors.full_messages }, status: 422
     end
@@ -26,7 +23,7 @@ class Api::UsersController < ApplicationController
   def update
     user = User.find(params[:id])
     if user.update_attributes(user_params)
-      render json: { text: "Account has been updated successfully" }, status: 200
+      render json: { user: user, text: "Account has been updated successfully" }, status: 200
     else
       render json: { error: user.errors.full_messages }, status: 422
     end
@@ -48,7 +45,7 @@ class Api::UsersController < ApplicationController
 
   private
     def user_params
-      params.require(:user).permit(:username, :name, :location, :bio, :resource_request, :skills, :seeking, :preferred_contact, :password, :password_confirmation)
+      params.permit(:username, :name, :location, :bio, :resource_request, :skills, :seeking, :preferred_contact)
     end
 
   # POTENTIAL AUTH
