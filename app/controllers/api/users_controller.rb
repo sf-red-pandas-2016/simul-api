@@ -1,7 +1,7 @@
 class Api::UsersController < ApplicationController
   def index
     users = User.all
-    render json: { users: users }
+    render json: { users: users }, status: 200
   end
 
   def create
