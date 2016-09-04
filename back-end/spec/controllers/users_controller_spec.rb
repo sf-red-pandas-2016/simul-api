@@ -1,14 +1,18 @@
 require 'rails_helper'
 
 describe Api::UsersController do
-  let(:user) { User.new(name: 'Oshoke',
-                       username: 'omaiki',
-                       location: 'San Francisco, CA',
-                       bio: 'no kids',
-                       preferred_contact: 'me@me.com',
-                       skills: 'coding',
-                       seeking: 'coding opportunities')
-                     }
+  FactoryGirl.define do
+    factory :user do
+        name 'Oshoke'
+        username 'thecoolguy'
+        location 'San Francisco, CA'
+        bio 'no kids'
+        preferred_contact 'me@me.com'
+        skills 'coding'
+        seeking 'coding opportunities'
+        resource_request 'looking for an apartment'
+    end
+  end
 
 describe 'GET #index' do
   it 'has a 200 status code' do
@@ -20,8 +24,15 @@ end
 describe 'POST #create' do
   context 'when valid params are passed' do
     it 'has a 201 status code' do
-      post :create, user: FactoryGirl.attributes_for(:user)
-      expect(response).to have_http_status(201)
+      # expect(response).to have_http_status(201)
+    #   expect {
+      # post :create, user: attributes_for(:user)
+    # }.to have_http_status(201)
+    #  post :create, { user: user }
+    #  expect(response).to have_http_status(201)
+    user_params = attributes_for(:user)
+    post :create, user_params
+    expect(response.status).to eq 201
     end
   end
 end

@@ -539,3 +539,10 @@ Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.7ms)
 
 
 >>>>>>> 1933778faedb7efb6a683570cef4c4d566f050b3
+Started GET "/api/users" for ::1 at 2016-09-03 20:58:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::UsersController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 36ms (Views: 25.7ms | ActiveRecord: 3.9ms)
+
+
