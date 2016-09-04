@@ -5,7 +5,6 @@ describe User do
   let(:user) { User.new(name: 'Oshoke',
                         username: 'omaiki',
                         location: 'San Francisco, CA',
-                        password: 'blablabla',
                         bio: 'no kids',
                         preferred_contact: 'me@me.com',
                         skills: 'coding',
