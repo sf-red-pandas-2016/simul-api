@@ -17,4 +17,13 @@ describe 'GET #index' do
   end
 end
 
+describe 'POST #create' do
+  context 'when valid params are passed' do
+    it 'has a 201 status code' do
+      post :create, user: FactoryGirl.attributes_for(:user)
+      expect(response).to have_http_status(201)
+    end
+  end
+end
+
 end
