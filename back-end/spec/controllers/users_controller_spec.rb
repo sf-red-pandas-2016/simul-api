@@ -14,27 +14,28 @@ describe Api::UsersController do
     end
   end
 
-describe 'GET #index' do
-  it 'has a 200 status code' do
-    get :index
-    expect(response).to have_http_status(200)
-  end
-end
-
-describe 'POST #create' do
-  context 'when valid params are passed' do
-    it 'has a 201 status code' do
-      # expect(response).to have_http_status(201)
-    #   expect {
-      # post :create, user: attributes_for(:user)
-    # }.to have_http_status(201)
-    #  post :create, { user: user }
-    #  expect(response).to have_http_status(201)
-    user_params = attributes_for(:user)
-    post :create, user_params
-    expect(response.status).to eq 201
+  describe 'GET #index' do
+    it 'has a 200 status code' do
+      get :index
+      expect(response).to have_http_status(200)
     end
   end
-end
 
+  describe 'POST #create' do
+    context 'when valid params are passed' do
+      it 'has a 201 status code' do
+        user_params = attributes_for(:user)
+        post :create, user_params
+        expect(response.status).to eq 201
+      end
+
+      it 'creates a new user in the database' do
+        user_params = attributes_for(:user)
+        expect {
+          post :create, user_params
+        }.to change(User,:count).by(1)
+      end
+    end
+
+end
 end

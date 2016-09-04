@@ -546,3 +546,30 @@ Processing by Api::UsersController#index as */*
 Completed 200 OK in 36ms (Views: 25.7ms | ActiveRecord: 3.9ms)
 
 
+Started GET "/api/users/5" for ::1 at 2016-09-03 22:06:26 -0700
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."user_id" = $1[0m  [["user_id", 5]]
+Completed 200 OK in 37ms (Views: 12.3ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/users/5/" for ::1 at 2016-09-03 22:06:34 -0700
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."user_id" = $1[0m  [["user_id", 5]]
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-09-03 22:08:35 -0700
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.6ms)
+
+
