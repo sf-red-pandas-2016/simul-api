@@ -52,6 +52,8 @@ GEM
     concurrent-ruby (1.0.2)
     diff-lcs (1.2.5)
     erubis (2.7.0)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
     ffaker (2.2.0)
     ffi (1.9.14)
     globalid (0.3.7)
@@ -107,7 +109,6 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-<<<<<<< HEAD
     rspec-core (3.5.3)
       rspec-support (~> 3.5.0)
     rspec-expectations (3.5.0)
@@ -125,7 +126,6 @@ GEM
       rspec-mocks (~> 3.5.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
-    rubysl-securerandom (2.0.0)
     spring (1.7.2)
     spring-watcher-listen (2.0.0)
       listen (>= 2.7, < 4.0)
@@ -153,13 +153,13 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara
+  factory_girl
   ffaker
   listen (~> 3.0.5)
   pg (~> 0.18)
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   rspec-rails
-  rubysl-securerandom
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
