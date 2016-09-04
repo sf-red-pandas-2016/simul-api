@@ -573,3 +573,12 @@ Processing by Api::UsersController#show as */*
 Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/api/users/1" for ::1 at 2016-09-03 22:35:30 -0700
+Processing by Api::UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.7ms)
+
+
