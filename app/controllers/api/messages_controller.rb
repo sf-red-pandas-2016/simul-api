@@ -30,9 +30,9 @@ class Api::MessagesController < ApplicationController
     #   render json: { error: message.errors.full_messages }, status: 422
     # end
   end
-end
 
 private
   def message_params
     params.permit(:user_id, :author, :subject, :author_contact, :content)
   end
+end

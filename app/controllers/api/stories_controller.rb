@@ -9,14 +9,12 @@ class Api::StoriesController < ApplicationController
   end
 
   def create
-    if user.id == current_user.id
-      story = Story.create
+      story = Story.new(story_params)
       if story.save
-        redirect_to story
+        render json: { story: story }, status: 200
       else
         render json: { error: story.errors.full_messages }, status: 422
       end
-    end
   end
 
   def show
@@ -32,5 +30,10 @@ class Api::StoriesController < ApplicationController
 
   def destroy
   end
+
+  private
+    def story_params
+      params.permit(:user_id, :title, :content)
+    end
 
 end
