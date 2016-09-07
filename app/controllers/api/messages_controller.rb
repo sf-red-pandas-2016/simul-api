@@ -9,7 +9,7 @@ class Api::MessagesController < ApplicationController
   end
 
   def create
-    message = Message.create
+    message = Message.new(message_params)
     if message.save
       render json: { message: message }, status: 200
     else
@@ -29,5 +29,10 @@ class Api::MessagesController < ApplicationController
     # else
     #   render json: { error: message.errors.full_messages }, status: 422
     # end
+  end
+
+private
+  def message_params
+    params.permit(:user_id, :author, :subject, :author_contact, :content)
   end
 end
