@@ -16,11 +16,12 @@ require 'ffaker'
     bio: FFaker::HipsterIpsum.phrase,
     preferred_contact: FFaker::Internet.safe_email,
     skills: FFaker::Skill.specialties,
-    seeking: FFaker::Job.title
+    seeking: FFaker::Job.title,
+    resource_request: FFaker::Vehicle.fuel_type,
   )
 end
 
-50.times do
+30.times do
   Story.create(
     user_id: rand(1..10),
     title: FFaker::HipsterIpsum.phrase,
@@ -28,7 +29,7 @@ end
   )
 end
 
-50.times do
+30.times do
   Message.create(
     user_id: rand(1..10),
     author: FFaker::Name.name,
