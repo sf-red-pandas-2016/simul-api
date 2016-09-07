@@ -15,6 +15,7 @@ require 'ffaker'
     location: FFaker::AddressUS.continental_state
     bio: FFaker::HipsterIpsum.phrase
     preferred_contact: FFaker::Internet.safe_email
+    resource_request: FFaker::Vehicle.fuel_type
     skills: FFaker::Skill.specialties
     seeking: FFaker::Job.title
   )
