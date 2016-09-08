@@ -20,7 +20,7 @@ Story.create(
 
 Story.create(
   user_id: 1,
-  title: "Invention I made with my brother",
+  title: "When I was in second grade, our school got attacked by a bomb",
   content: "When I was in second grade, our school got attacked by a bomb. It was a barrel full of explosions. We were just opening our books to start the class, and it's hard to describe the sound, but it was like a building coming apart. I ran to the other class to find my brother, and he was crying because of the sound. Our bus left, so we didn’t know what to do. But my brother is so smart. He ran to the market and called our grandma.",
   photo: 'https://static4.businessinsider.com/image/566ee7822340f899008b5628-1200/istanbul-turkey.jpg'
 )
@@ -74,7 +74,7 @@ Message.create(
   author: "Tolsen Wilmot",
   author_contact: "tolsenwilmot@gmail.com",
   subject: "Many toys for your kids",
-  content: "Mohammed, I have really cool toys I'd love to give you. Wrtie me an email and we can figure out which ones your kids will enjoy.",
+  content: "Mohammed, I have really cool toys I'd love to give you. Write me an email and we can figure out which ones your kids will enjoy.",
 )
 
 #3
@@ -100,10 +100,10 @@ Story.create(
 #4
 User.create(
   name: "Nizar Asfour",
-  username: "climber10",
+  username: "asfournizar",
   location: "Amman, Jordan",
   bio: "Aspiring Arabic professor. Father of two.",
-  preferred_contact: "tree_climber@gmail.com",
+  preferred_contact: "asfournizar@gmail.com",
   skills: "Arabic teacher, French Philosophy, Literature.",
   seeking: "Arabic students",
   resource_request: "A good conversation partner.",
@@ -113,22 +113,23 @@ User.create(
 Story.create(
   user_id: 4,
   title: "Part 1: A strange voice answered",
-  content: "I was studying Literature and French Philosophy when the war came. I wanted to be an Arabic teacher. I didn't want to be a soldier. I didn’t want to kill anyone. I had no interest in religion or politics. But all the young men were being forced to join the army, so when it came time to renew my papers, I ran. I only packed a small suitcase. I was planning to stay in Jordan for maybe a month until things calmed down. But when a month passed and the war hadn't ended, I thought: 'Maybe two months.' Then: 'Maybe three months.' But after three months my mother told me that our house had been destroyed. She sent me a picture on the phone. Everything was rubble. There was nothing to go back to. But I had nothing in Jordan. I’d run out of money. I didn't know anyone. I was homeless. I felt so alone that I wanted to kill myself. Then one day I tried to call a friend's phone, but a strange voice answered.",
-  photo:'https://static5.businessinsider.com/image/566eea462340f855008b561a-1200/amman-jordan.jpg',
+  content: "I was studying Literature and French Philosophy when the war came. I wanted to be an Arabic teacher. I didn't want to be a soldier. I didn’t want to kill anyone. I had no interest in religion or politics. But all the young men were being forced to join the army, so when it came time to renew my papers, I ran. I only packed a small suitcase. I was planning to stay in Jordan for maybe a month until things calmed down. But when a month passed and the war hadn't ended, I thought: Maybe two months. Then: Maybe three months. But after three months my mother told me that our house had been destroyed. She sent me a picture on the phone. Everything was rubble. There was nothing to go back to. But I had nothing in Jordan. I’d run out of money. I didn't know anyone. I was homeless. I felt so alone that I wanted to kill myself. Then one day I tried to call a friend's phone, but a strange voice answered.",
+  photo:'https://static5.businessinsider.com/image/566eea462340f855008b561a-1200/amman-jordan.jpg'
 )
+
 
 Story.create(
   user_id: 4,
   title: "Part 2: A strange voice answered",
   content: "We met because of a wrong number. But we ended up speaking for a few minutes, and at the end of our conversation, he asked if he could call again. Soon he was calling me every day. It never felt romantic. I never felt that he had bad intentions. It just felt like he needed someone to talk to. He would tell me every little detail about his day. We'd talk for hours. Those phone calls were the highlight of my days. I was a refugee too. I was also lonely. So I'd sit in my room and wait for the phone to ring. Eventually we met in person. But I'm seven years older than him. I never once expected him to mention marriage. But then one day he asked if he could come speak to my family.",
-  photo:'https://static3.businessinsider.com/image/566eea462340f87d008b569b-1200/amman-jordan.jpg',
+  photo:'https://static3.businessinsider.com/image/566eea462340f87d008b569b-1200/amman-jordan.jpg'
 )
 
 Story.create(
   user_id: 4,
   title: "I stopped watching the TV",
   content: "Ever since we had our first child, I stopped watching the TV. Everyday I used to watch the news and obsess over what was happening back in Syria. But once we had children, I had to realize that I couldn't change anything, and the worrying wasn't helping my family. We learned recently that we will be moving to a state called Michigan. I'm a pessimist, so I'm not going to believe it until we are on the plane. But my nephew is there and he says it’s like heaven. He says it's very green and has nice nature. When we get to Michigan, I'm not going to turn on the television again. I'm done with religion and politics forever. I only want to worry about milk and diapers.",
-  photo:'https://static5.businessinsider.com/image/566eea4672f2c15b028b561b-1200/amman-jordan.jpg',
+  photo:'https://static5.businessinsider.com/image/566eea4672f2c15b028b561b-1200/amman-jordan.jpg'
 )
 
 #5
@@ -141,14 +142,14 @@ User.create(
   skills: "Merchant",
   seeking: "Doctors specializing in autism.",
   resource_request: "Connections to doctors/therapists specializing in autism. Money for son's health insurance.",
-  photo: 'https://static3.businessinsider.com/image/566eebbd2340f827018b5675-1200/gaziantep-turkey.jpg',
+  photo: 'https://static3.businessinsider.com/image/566eebbd2340f827018b5675-1200/gaziantep-turkey.jpg'
 )
 
 Story.create(
   user_id: 5,
   title: "Trying to find Doctor for son with autism",
   content: "He cried a lot as a baby. By the age of two he wasn't speaking or eating. Our local doctor didn’t know what was wrong, but we found a good doctor in Damascus, and he told us that our son had autism. The doctor recommended a therapist. On the first day of therapy, he was too scared to even enter the office. But after a few months of treatment, he was able to concentrate and even write the alphabet. He went to therapy every week for the next few years. It was really helping him. He was learning so many things. But when the war came, the roads were closed. We couldn't go to therapy anymore. The bombs affected him very badly. He gets scared easily. He's even afraid of the dark. But the bombs scared him very much. He hasn't been to therapy for years. We have no money or insurance here in Turkey. We are very isolated. It seems that all the progress has been undone. He used to want to learn. He used to get his books out of the bag and bring them to us. But now he just throws them away. He can't sit still. I'm afraid that we've lost too much time now. But my husband is optimistic. He thinks that we will find the right doctor in America.",
-  photo:'https://static3.businessinsider.com/image/566eebbd2340f827018b5675-1200/gaziantep-turkey.jpg',
+  photo:'https://static3.businessinsider.com/image/566eebbd2340f827018b5675-1200/gaziantep-turkey.jpg'
 )
 
 #6
@@ -168,7 +169,7 @@ Story.create(
   user_id: 6,
   title: "I had to leave the home that I'd spent thirty years building",
   content: "I had to leave the home that I'd spent thirty years building. One day I just had to close the doors, turn the key, and leave everything behind. I'm seventy-two. No one wants to leave home at my age. But I left because I have six sons, and I knew one day the soldiers would come for them. My sons weren't political. They wanted nothing to do with killing, but that didn't matter. Good people and bad people were all being treated the same way. I watched soldiers take away the neighbors' boys with my own eyes. They were good boys. I'd known them their whole lives. But they were led away like sheep. They didn't even speak up because if they opened their mouths, they'd be shot. I knew it was only a matter of time before they came to our house. We left everything behind, but now my family is safe. So I am happy.",
-  photo: 'https://static4.businessinsider.com/image/566eec7872f2c15d028b5612-1200/amman-jordan.jpg',
+  photo: 'https://static4.businessinsider.com/image/566eec7872f2c15d028b5612-1200/amman-jordan.jpg'
 )
 
 #7
@@ -251,12 +252,6 @@ Story.create(
   photo:'https://static4.businessinsider.com/image/566ef2b172f2c151028b5696-1200/istanbul-turkey.jpg',
 )
 
-Story.create(
-  user_id: 9,
-  title: "The day a missile hit my house",
-  content: "I was overseeing a project outside the city when the missile hit my house. Nobody was around to help, so my son had to carry the pieces of his mother and sister out of the house. He was fourteen at the time. He was so smart. He was the top of his class. He's not the same. Right after it happened, he'd write 'mom' in his notebook over and over. He'd cry all night long. Two years have passed, but he's still suffering very much. It's very hard for him to focus. He gets tired very easily. My daughter was in the house too. She still has shrapnel in her neck. We survived but we’re dead psychologically. Everything ended for us that day. That was our destiny. That was our share in life.",
-  photo:'https://static4.businessinsider.com/image/566ef2b172f2c151028b5696-1200/istanbul-turkey.jpg',
-)
 Story.create(
   user_id: 9,
   title: "My ultimate goal",
