@@ -74,7 +74,7 @@ Message.create(
   author: "Tolsen Wilmot",
   author_contact: "tolsenwilmot@gmail.com",
   subject: "Many toys for your kids",
-  content: "Mohammed, I have really cool toys I'd love to give you. Wrtie me an email and we can figure out which ones your kids will enjoy.",
+  content: "Mohammed, I have really cool toys I'd love to give you. Write me an email and we can figure out which ones your kids will enjoy.",
 )
 
 #3
