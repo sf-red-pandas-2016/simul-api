@@ -1,7 +1,7 @@
 class Api::MessagesController < ApplicationController
 
   def index
-    messages = Message.where(user_id: params[:user_id])
+    messages = Message.where(user_id: params[:user_id]).reverse
     render json: { messages: messages }, status: 200
   end
 
