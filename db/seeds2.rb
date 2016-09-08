@@ -94,7 +94,63 @@ User.create(
 
 Story.create(
   user_id: 3,
-  title: "The whole world in my hands",
+  title: "Moving to Florida",
   content: "We are going to a place called Clearwater, Florida. I don't know a lot about it. I saw Florida on the television and it looks like it's close to the sea and has a lot of plants. My dad says the people are friendly and there are a lot of friendly kids there. I really hope that we can have a small farm and a horse when we get there because my grandmother really loves animals. I'd like it to be a square farm with lots of flowers and rabbits. I also hope there is a good tree in Florida because I'd like to build a tree house where we can have some adventures.",
   photo:'https://static6.businessinsider.com/image/566ee7822340f838008b5601-1200/istanbul-turkey.jpg'
 )
+
+#4
+User.create(
+  name: "Nizar Asfour",
+  username: "climber10",
+  location: "Amman, Jordan",
+  bio: "Aspiring Arabic professor. Father of two.",
+  preferred_contact: "tree_climber@gmail.com",
+  skills: "Arabic teacher, French Philosophy, Literature.",
+  seeking: "Arabic students",
+  resource_request: "A good conversation partner.",
+  photo: 'https://static5.businessinsider.com/image/566eea462340f855008b561a-1200/amman-jordan.jpg',
+)
+
+Story.create(
+  user_id: 4,
+  title: "Part 1: A strange voice answered",
+  content: "I was studying Literature and French Philosophy when the war came. I wanted to be an Arabic teacher. I didn't want to be a soldier. I didn’t want to kill anyone. I had no interest in religion or politics. But all the young men were being forced to join the army, so when it came time to renew my papers, I ran. I only packed a small suitcase. I was planning to stay in Jordan for maybe a month until things calmed down. But when a month passed and the war hadn't ended, I thought: 'Maybe two months.' Then: 'Maybe three months.' But after three months my mother told me that our house had been destroyed. She sent me a picture on the phone. Everything was rubble. There was nothing to go back to. But I had nothing in Jordan. I’d run out of money. I didn't know anyone. I was homeless. I felt so alone that I wanted to kill myself. Then one day I tried to call a friend's phone, but a strange voice answered.",
+  photo:'https://static5.businessinsider.com/image/566eea462340f855008b561a-1200/amman-jordan.jpg',
+)
+
+Story.create(
+  user_id: 4,
+  title: "Part 2: A strange voice answered",
+  content: "We met because of a wrong number. But we ended up speaking for a few minutes, and at the end of our conversation, he asked if he could call again. Soon he was calling me every day. It never felt romantic. I never felt that he had bad intentions. It just felt like he needed someone to talk to. He would tell me every little detail about his day. We'd talk for hours. Those phone calls were the highlight of my days. I was a refugee too. I was also lonely. So I'd sit in my room and wait for the phone to ring. Eventually we met in person. But I'm seven years older than him. I never once expected him to mention marriage. But then one day he asked if he could come speak to my family.",
+  photo:'https://static3.businessinsider.com/image/566eea462340f87d008b569b-1200/amman-jordan.jpg',
+)
+
+Story.create(
+  user_id: 4,
+  title: "I stopped watching the TV",
+  content: "Ever since we had our first child, I stopped watching the TV. Everyday I used to watch the news and obsess over what was happening back in Syria. But once we had children, I had to realize that I couldn't change anything, and the worrying wasn't helping my family. We learned recently that we will be moving to a state called Michigan. I'm a pessimist, so I'm not going to believe it until we are on the plane. But my nephew is there and he says it’s like heaven. He says it's very green and has nice nature. When we get to Michigan, I'm not going to turn on the television again. I'm done with religion and politics forever. I only want to worry about milk and diapers.",
+  photo:'https://static5.businessinsider.com/image/566eea4672f2c15b028b561b-1200/amman-jordan.jpg',
+)
+
+#5
+User.create(
+  name: "Rima Halabi",
+  username: "ami_2",
+  location: "Gaziantep, Turkey",
+  bio: "Settling mother.",
+  preferred_contact: "ami_2@gmail.com",
+  skills: "Merchant",
+  seeking: "Doctors specializing in autism.",
+  resource_request: "Connections to doctors/therapists specializing in autism. Money for son's health insurance.",
+  photo: 'https://static3.businessinsider.com/image/566eebbd2340f827018b5675-1200/gaziantep-turkey.jpg',
+)
+
+Story.create(
+  user_id: 5,
+  title: "Trying to find Doctor for son with autism",
+  content: "He cried a lot as a baby. By the age of two he wasn't speaking or eating. Our local doctor didn’t know what was wrong, but we found a good doctor in Damascus, and he told us that our son had autism. The doctor recommended a therapist. On the first day of therapy, he was too scared to even enter the office. But after a few months of treatment, he was able to concentrate and even write the alphabet. He went to therapy every week for the next few years. It was really helping him. He was learning so many things. But when the war came, the roads were closed. We couldn't go to therapy anymore. The bombs affected him very badly. He gets scared easily. He's even afraid of the dark. But the bombs scared him very much. He hasn't been to therapy for years. We have no money or insurance here in Turkey. We are very isolated. It seems that all the progress has been undone. He used to want to learn. He used to get his books out of the bag and bring them to us. But now he just throws them away. He can't sit still. I'm afraid that we've lost too much time now. But my husband is optimistic. He thinks that we will find the right doctor in America.",
+  photo:'https://static3.businessinsider.com/image/566eebbd2340f827018b5675-1200/gaziantep-turkey.jpg',
+)
+
+#6
