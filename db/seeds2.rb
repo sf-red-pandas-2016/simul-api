@@ -154,3 +154,20 @@ Story.create(
 )
 
 #6
+User.create(
+  name: "Rima Halabi",
+  username: "ami_2",
+  location: "Amman, Jordan",
+  bio: "Mother and grandmother.",
+  preferred_contact: "ami_2@gmail.com",
+  skills: "Merchant",
+  seeking: "Doctors specializing in autism.",
+  resource_request: "Connections to doctors/therapists specializing in autism. Money for son's health insurance.",
+  photo: 'https://static3.businessinsider.com/image/566eebbd2340f827018b5675-1200/gaziantep-turkey.jpg',
+)
+Story.create(
+  user_id: 6,
+  title: "Trying to find Doctor for son with autism",
+  content: "I had to leave the home that I'd spent thirty years building. One day I just had to close the doors, turn the key, and leave everything behind. I'm seventy-two. No one wants to leave home at my age. But I left because I have six sons, and I knew one day the soldiers would come for them. My sons weren't political. They wanted nothing to do with killing, but that didn't matter. Good people and bad people were all being treated the same way. I watched soldiers take away the neighbors' boys with my own eyes. They were good boys. I'd known them their whole lives. But they were led away like sheep. They didn't even speak up because if they opened their mouths, they'd be shot. I knew it was only a matter of time before they came to our house. We left everything behind, but now my family is safe. So I am happy.",
+  photo:'https://static4.businessinsider.com/image/566eec7872f2c15d028b5612-1200/amman-jordan.jpg',
+)
