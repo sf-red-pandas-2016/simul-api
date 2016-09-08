@@ -2,7 +2,7 @@ require 'ffaker'
 
 #1
 User.create(
-  name: "Adnan",
+  name: "Adnan Masih",
   username: "dinosaur_king",
   location: "Istanbul, Turkey",
   bio: "I want to be a professor that examines the bones of dinosaurs because I like dinosaurs a lot. I also want to have a dinosaur, but I know that’s impossible. I love to go to Google and type: 'Nice dinosaur movies.' But that uses a lot of the phone, so I don't get to do that too much. One day I'm going to open a museum full of dinosaur bones. I'm not sure where I'll find the bones. Probably America and France.",
@@ -37,7 +37,7 @@ Message.create(
 
 #2
 User.create(
-  name: "Mohammed",
+  name: "Mohammed Malouf",
   username: "papa13",
   location: "Istanbul, Turkey",
   bio: "I love my children. They are my everything.",
@@ -81,7 +81,7 @@ Message.create(
 
 #3
 User.create(
-  name: "Houmam",
+  name: "Houmam Awad",
   username: "climber10",
   location: "Istanbul, Turkey",
   bio: "Moving to Clearwater, Florida soon.",
