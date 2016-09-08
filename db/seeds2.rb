@@ -1,5 +1,3 @@
-require 'ffaker'
-
 #1
 User.create(
   name: "Adnan Masih",
@@ -222,9 +220,7 @@ Story.create(
 Story.create(
   user_id: 8,
   title: "We've been waiting for two years now",
-  content: "We've been waiting for two years now. We've been through all our interviews. Last week this letter came and said that we've been 'deferred.' I'm not even sure what that means. We were very truthful about everything. We have nothing left in Syria. I want to continue working as a doctor in America. Here my hands are tied. Refugees are not allowed to work. I don't have papers. I can't communicate with anyone."
-
-"I worked my entire life to become a doctor. I did nothing but study for six years. I didn’t even have a hobby. Now I'm doing nothing. I'm losing hope. I've started to wonder if it would have been better for us to go the illegal way across the sea.",
+  content: "We've been waiting for two years now. We've been through all our interviews. Last week this letter came and said that we've been 'deferred.' I'm not even sure what that means. We were very truthful about everything. We have nothing left in Syria. I want to continue working as a doctor in America. Here my hands are tied. Refugees are not allowed to work. I don't have papers. I can't communicate with anyone. I worked my entire life to become a doctor. I did nothing but study for six years. I didn’t even have a hobby. Now I'm doing nothing. I'm losing hope. I've started to wonder if it would have been better for us to go the illegal way across the sea.",
   photo:'https://static1.businessinsider.com/image/566eef4772f2c15b028b5650-1200/gaziantep-turkey.jpg',
 )
 
@@ -273,4 +269,51 @@ Story.create(
   title: "Compound built for my family",
   content: "I built this compound for my family. I saved the money for it, I designed it myself, and I oversaw the construction. The first missile tore through the yellow house and exploded inside the pink house. It was a government anti-personnel missile. They are not supposed to be used in residential areas. Inside were 116 small bombs, and each bomb was filled with needles and shrapnel. The pink house belonged to my brother and his entire family was torn to pieces. The second missile landed in the green house but did not explode. That was my house. If the missile had exploded, I wouldn’t have any children left. But it only destroyed the top floor where my wife and daughter were. Sixteen people died in the attack. Seven were from my family.",
   photo:'https://i.dailymail.co.uk/i/pix/2015/12/14/16/2F5D7EAD00000578-3359351-The_Syrian_man_wrote_that_the_compound_he_had_built_for_his_fami-a-3_1450112259429.jpg',
+)
+
+#10
+User.create(
+  name: "Amena Tahan",
+  username: "ahmar9",
+  location: "Gaziantep, Turkey",
+  bio: "",
+  preferred_contact: "amtahan@yahoo.com",
+  skills: "",
+  seeking: "Surgeons for my son in Turkey/America",
+  resource_request: "Funds for my son's healthcare bills.",
+  photo:'https://static1.businessinsider.com/image/566ef3e82340f840008b56d2-1200/gaziantep-turkey.jpg',
+)
+
+Story.create(
+  user_id: 10,
+  title: "One night he got a fever and there was nothing I could do.",
+  content: "Fevers are very dangerous for him because of his condition. One night he got a fever and there was nothing I could do. The doctors and the pharmacists had all fled our village. It was too dangerous to even go outside. We didn't even have a phone. All I could do was take his clothes off and wipe him with cold water. He shook all night. At one point his eyes rolled into the back of his head. He was like a body without a soul. I cried all night. The fever broke in the morning, but that was enough for me. Three days later we went to Turkey. I'm hoping there will be a surgery that can help him in America. He is very attached to me. He cries whenever I leave him. I just hope one day he'll be able to tell me exactly what he wants.",
+  photo:'https://static1.businessinsider.com/image/566ef3e82340f840008b56d2-1200/gaziantep-turkey.jpg',
+)
+
+#11
+User.create(
+  name: "Tarek Cham",
+  username: "tcham",
+  location: "Amman, Jordan",
+  bio: "",
+  preferred_contact: "tarekcham1@yahoo.com",
+  skills: "Business owner, entrepeneur, driver, dairy store maintenance.",
+  seeking: "",
+  resource_request: "",
+  photo:'https://static1.businessinsider.com/image/566ef4ea2340f8e0008b562c-1200/amman-jordan.jpg',
+)
+
+Story.create(
+  user_id: 11,
+  title: "Sometimes I sit by myself and I blame myself for leaving Syria",
+  content: "Sometimes I sit by myself and I blame myself for leaving Syria. I used to own my own business. Now I'm working as an employee in a dairy shop. I have nothing here. When I feel nostalgic about Syria, I remember the smell of jasmine in my back garden. I remember my four best friends. We were always laughing and joking together. On Friday mornings during the summer, we'd wake up early to drive to the lake and swim. In the winter we'd play cards and smoke the water pipe. But I have to remind myself that Syria isn't there anymore. Our old town doesn't even have any food. A bag of salt costs $50 now. And all my friends are gone. One of them is in Egypt, one is in Turkey, one is in Lebanon, and the other was killed by a sniper.",
+  photo:'https://static3.businessinsider.com/image/566ef7d972f2c10b018b5652-1200/amman-jordan.jpg',
+)
+
+Story.create(
+  user_id: 11,
+  title: "Life had been going so well for me before the war came",
+  content: "Life had been going so well for me before the war came. I'm a driver, and I'd just saved enough money to buy a new car. I was starting a family. My father had given us a house and we'd bought all new furniture. But one day a mortar destroyed a wall of our house. It was too dangerous to stay. I left because of the children. The years we've spent as refugees have been very tough, but we've just learned that we're going to Detroit, Michigan. I have a brother-in-law who says it's very nice there. He says he is allowed to work legally and officially. So hopefully I can start driving again. He says there is heating in the houses, and the water is warm when you shower. And he says that America cares about children. He tells me that there is a bus that picks them up and takes them to school.",
+  photo:'https://static2.businessinsider.com/image/566ef7d972f2c14a008b564a-1200/amman-jordan.jpg',
 )
