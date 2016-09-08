@@ -254,12 +254,6 @@ Story.create(
 
 Story.create(
   user_id: 9,
-  title: "The day a missile hit my house",
-  content: "I was overseeing a project outside the city when the missile hit my house. Nobody was around to help, so my son had to carry the pieces of his mother and sister out of the house. He was fourteen at the time. He was so smart. He was the top of his class. He's not the same. Right after it happened, he'd write 'mom' in his notebook over and over. He'd cry all night long. Two years have passed, but he's still suffering very much. It's very hard for him to focus. He gets tired very easily. My daughter was in the house too. She still has shrapnel in her neck. We survived but we’re dead psychologically. Everything ended for us that day. That was our destiny. That was our share in life.",
-  photo:'https://static4.businessinsider.com/image/566ef2b172f2c151028b5696-1200/istanbul-turkey.jpg',
-)
-Story.create(
-  user_id: 9,
   title: "My ultimate goal",
   content: "My parents were supportive of my education, but they didn’t direct me. My father was a farmer and my mother was a housewife. They did not know much about science. But I was determined to become a scientist through my own personal will. I graduated high school with the third highest scores in all of Syria. I worked construction in the evenings to pay for my school. Even as a teenager, I was being given construction sites to manage. I graduated from university at the top of my class. I was given a scholarship to pursue my PhD. I suffered for my dream. I gave everything. If I had 100 liras, I would spend it on a book. My ultimate goal was to become a great scientist and make a lasting contribution to humanity.",
   photo:'https://static4.businessinsider.com/image/566ef2b172f2c151028b5696-1200/istanbul-turkey.jpg',
