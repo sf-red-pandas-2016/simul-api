@@ -168,7 +168,7 @@ User.create(
 
 Story.create(
   user_id: 6,
-  title: "I had to leave the home that I'd spent thirty years building.",
+  title: "I had to leave the home that I'd spent thirty years building",
   content: "I had to leave the home that I'd spent thirty years building. One day I just had to close the doors, turn the key, and leave everything behind. I'm seventy-two. No one wants to leave home at my age. But I left because I have six sons, and I knew one day the soldiers would come for them. My sons weren't political. They wanted nothing to do with killing, but that didn't matter. Good people and bad people were all being treated the same way. I watched soldiers take away the neighbors' boys with my own eyes. They were good boys. I'd known them their whole lives. But they were led away like sheep. They didn't even speak up because if they opened their mouths, they'd be shot. I knew it was only a matter of time before they came to our house. We left everything behind, but now my family is safe. So I am happy.",
   photo: 'https://static4.businessinsider.com/image/566eec7872f2c15d028b5612-1200/amman-jordan.jpg',
 )
@@ -187,7 +187,50 @@ User.create(
 )
 Story.create(
   user_id: 7,
-  title: "Because I'm a refugee, my life is on pause.",
+  title: "Because I'm a refugee, my life is on pause",
   content: "Because I’m a refugee, my life is on pause. My studies have stopped. I'm not working. I don't have a career. Because I'm Syrian, I'm not allowed to participate in society. It's been years of doing nothing. I used to be a cheerful person. I was always invited to parties. Now I like to be alone. I've become more nervous and aggressive. I yell over silly things. I just want to start my life again. I learned last Thursday that I'm going to a state called North Carolina. I'm very nervous. I know nothing about it. More than anything, I want to finish my education. But mostly I hope that whatever is waiting for me there is better than what I’ve gone through.",
   photo:'https://static5.businessinsider.com/image/566eed9172f2c15b028b5638-1200/amman-jordan.jpg',
+)
+
+#8
+User.create(
+  name: "Anas Isa",
+  username: "tabib1",
+  location: "Gaziantep, Turkey",
+  bio: "Doctor and family man.",
+  preferred_contact: "anasisa@gmail.com",
+  skills: "Medical doctor in internal medicine.",
+  seeking: "Employment",
+  resource_request: "Connections to medical offices in Turkey/US and immigration services in the US.",
+  photo:'https://static1.businessinsider.com/image/566eef4772f2c15b028b5650-1200/gaziantep-turkey.jpg',
+)
+
+Story.create(
+  user_id: 8,
+  title: "I was the only doctor in the area, so when ISIS captured our town, I knew that they would ask me to work for them",
+  content: "I was the only doctor in the area, so when ISIS captured our town, I knew that they would ask me to work for them. We should have left right away. One night five men came to our house. They were wearing masks and they refused to take off their shoes. Their Arabic was not with a Syrian accent. They claimed to be searching for weapons and went from room to room. They knew about me already, because they kept calling me 'Doctor.' My wife says, 'When they finished searching the house, they arrested my husband. It was a night in January, so it was too cold for them to start their car. The engine kept turning over and over. I thought that maybe a miracle would keep them from taking him. But then I heard the engine start and they drove away. I paced in the street all night. At one point I heard a gunshot in the distance, and I thought for sure they had killed him. I thought it was all my fault. We should have left right away.'",
+  photo:'https://static3.businessinsider.com/image/566eeea972f2c152028b557f-1200/gaziantep-turkey.jpg',
+)
+
+Story.create(
+  user_id: 8,
+  title: "ISIS needs educated people to support them. None of them finished school.",
+  content: "ISIS needs educated people to support them. None of them finished school. They cannot manage the cities they capture because they have no skills. When they took me to prison, at first they were very aggressive. They kept putting a gun to my head and taking it away. But after a few minutes of this, one of the men began speaking to me in a very nice way. He said: 'You are an Islamic man. Please, be a good Muslim and help us. We want your wife to open a hospital for us. And we want you to manage it.' I agreed to everything they asked. I told them I would help. Then the moment they let me go home, we packed our bags and left.",
+  photo:'https://static1.businessinsider.com/image/566eef4772f2c15b028b5650-1200/gaziantep-turkey.jpg',
+)
+
+Story.create(
+  user_id: 8,
+  title: "We've been waiting for two years now",
+  content: "We've been waiting for two years now. We've been through all our interviews. Last week this letter came and said that we've been 'deferred.' I'm not even sure what that means. We were very truthful about everything. We have nothing left in Syria. I want to continue working as a doctor in America. Here my hands are tied. Refugees are not allowed to work. I don't have papers. I can't communicate with anyone."
+
+"I worked my entire life to become a doctor. I did nothing but study for six years. I didn’t even have a hobby. Now I'm doing nothing. I'm losing hope. I've started to wonder if it would have been better for us to go the illegal way across the sea.",
+  photo:'https://static1.businessinsider.com/image/566eef4772f2c15b028b5650-1200/gaziantep-turkey.jpg',
+)
+
+Story.create(
+  user_id: 8,
+  title: "Approved to come to America",
+  content: "Photo of me and my wife 30 seconds after we learned the new that we were accepted to America.",
+  photo:'https://static3.businessinsider.com/image/566eefc072f2c1de008b5661-1200/gaziantep-turkey.jpg',
 )
