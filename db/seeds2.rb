@@ -234,3 +234,43 @@ Story.create(
   content: "Photo of me and my wife 30 seconds after we learned the new that we were accepted to America.",
   photo:'https://static3.businessinsider.com/image/566eefc072f2c1de008b5661-1200/gaziantep-turkey.jpg',
 )
+
+#9
+User.create(
+  name: "Ahmed Naser",
+  username: "thescientist",
+  location: "Istanbul, Turkey",
+  bio: "I still think I have a chance to make a difference in the world. I have several inventions that I'm hoping to patent once I get to America. One of my inventions is being used right now on the Istanbul metro to generate electricity from the movement of the train. I have sketches for a plane that can fly for 48 hours without fuel. I've been thinking about a device that can predict earthquakes weeks before they happen. I just want a place to do my research.",
+  preferred_contact: "ahmednaser@gmail.com",
+  skills: "Inventor, scientist, researcher.",
+  seeking: "Settlement",
+  resource_request: "A place to research.",
+  photo:'https://static3.businessinsider.com/image/566ef36572f2c118008b5672-1200/istanbul-turkey.jpg',
+)
+
+Story.create(
+  user_id: 9,
+  title: "The day a missile hit my house",
+  content: "I was overseeing a project outside the city when the missile hit my house. Nobody was around to help, so my son had to carry the pieces of his mother and sister out of the house. He was fourteen at the time. He was so smart. He was the top of his class. He's not the same. Right after it happened, he'd write 'mom' in his notebook over and over. He'd cry all night long. Two years have passed, but he's still suffering very much. It's very hard for him to focus. He gets tired very easily. My daughter was in the house too. She still has shrapnel in her neck. We survived but we’re dead psychologically. Everything ended for us that day. That was our destiny. That was our share in life.",
+  photo:'https://static4.businessinsider.com/image/566ef2b172f2c151028b5696-1200/istanbul-turkey.jpg',
+)
+
+Story.create(
+  user_id: 9,
+  title: "The day a missile hit my house",
+  content: "I was overseeing a project outside the city when the missile hit my house. Nobody was around to help, so my son had to carry the pieces of his mother and sister out of the house. He was fourteen at the time. He was so smart. He was the top of his class. He's not the same. Right after it happened, he'd write 'mom' in his notebook over and over. He'd cry all night long. Two years have passed, but he's still suffering very much. It's very hard for him to focus. He gets tired very easily. My daughter was in the house too. She still has shrapnel in her neck. We survived but we’re dead psychologically. Everything ended for us that day. That was our destiny. That was our share in life.",
+  photo:'https://static4.businessinsider.com/image/566ef2b172f2c151028b5696-1200/istanbul-turkey.jpg',
+)
+Story.create(
+  user_id: 9,
+  title: "My ultimate goal",
+  content: "My parents were supportive of my education, but they didn’t direct me. My father was a farmer and my mother was a housewife. They did not know much about science. But I was determined to become a scientist through my own personal will. I graduated high school with the third highest scores in all of Syria. I worked construction in the evenings to pay for my school. Even as a teenager, I was being given construction sites to manage. I graduated from university at the top of my class. I was given a scholarship to pursue my PhD. I suffered for my dream. I gave everything. If I had 100 liras, I would spend it on a book. My ultimate goal was to become a great scientist and make a lasting contribution to humanity.",
+  photo:'https://static4.businessinsider.com/image/566ef2b172f2c151028b5696-1200/istanbul-turkey.jpg',
+)
+
+Story.create(
+  user_id: 9,
+  title: "Compound built for my family",
+  content: "I built this compound for my family. I saved the money for it, I designed it myself, and I oversaw the construction. The first missile tore through the yellow house and exploded inside the pink house. It was a government anti-personnel missile. They are not supposed to be used in residential areas. Inside were 116 small bombs, and each bomb was filled with needles and shrapnel. The pink house belonged to my brother and his entire family was torn to pieces. The second missile landed in the green house but did not explode. That was my house. If the missile had exploded, I wouldn’t have any children left. But it only destroyed the top floor where my wife and daughter were. Sixteen people died in the attack. Seven were from my family.",
+  photo:'https://i.dailymail.co.uk/i/pix/2015/12/14/16/2F5D7EAD00000578-3359351-The_Syrian_man_wrote_that_the_compound_he_had_built_for_his_fami-a-3_1450112259429.jpg',
+)
