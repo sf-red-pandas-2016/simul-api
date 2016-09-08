@@ -10,18 +10,21 @@ User.create(
   skills: "Building objects",
   seeking: "Turkish tutoring",
   resource_request: "Materials to create a giant dinosaur with my brother.",
+  photo: 'https://static4.businessinsider.com/image/566ee7822340f899008b5628-1200/istanbul-turkey.jpg',
 )
 
 Story.create(
   user_id: 1,
   title: "Invention I made with my brother",
   content: "Look at this invention we made. We've made a lot of inventions. You can make really good things out of stuff you don't need. We made an alien out of a speaker that we found in the trash, and then we made a person out of milk cartons, and we turned our trash can into a dinosaur because I love dinosaurs.",
+  photo: 'https://static4.businessinsider.com/image/566ee7822340f8e0008b55ad-1200/istanbul-turkey.jpg',
 )
 
 Story.create(
   user_id: 1,
   title: "Invention I made with my brother",
   content: "When I was in second grade, our school got attacked by a bomb. It was a barrel full of explosions. We were just opening our books to start the class, and it's hard to describe the sound, but it was like a building coming apart. I ran to the other class to find my brother, and he was crying because of the sound. Our bus left, so we didn’t know what to do. But my brother is so smart. He ran to the market and called our grandma.",
+  photo: 'https://static4.businessinsider.com/image/566ee7822340f899008b5628-1200/istanbul-turkey.jpg'
 )
 
 Message.create(
