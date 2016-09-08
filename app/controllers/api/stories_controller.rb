@@ -1,7 +1,7 @@
 class Api::StoriesController < ApplicationController
 
   def index
-    stories = Story.where(user_id: params[:user_id])
+    stories = Story.where(user_id: params[:user_id]).reverse
     render json: { stories: stories }, status: 200
   end
 
