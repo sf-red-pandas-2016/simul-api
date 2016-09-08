@@ -155,19 +155,39 @@ Story.create(
 
 #6
 User.create(
-  name: "Rima Halabi",
-  username: "ami_2",
+  name: "Sara Nazari",
+  username: "saranazari",
   location: "Amman, Jordan",
   bio: "Mother and grandmother.",
-  preferred_contact: "ami_2@gmail.com",
-  skills: "Merchant",
-  seeking: "Doctors specializing in autism.",
-  resource_request: "Connections to doctors/therapists specializing in autism. Money for son's health insurance.",
-  photo: 'https://static3.businessinsider.com/image/566eebbd2340f827018b5675-1200/gaziantep-turkey.jpg',
+  preferred_contact: "saranazari@gmail.com",
+  skills: "",
+  seeking: "",
+  resource_request: "Awareness.",
+  photo: 'https://static4.businessinsider.com/image/566eec7872f2c15d028b5612-1200/amman-jordan.jpg',
 )
+
 Story.create(
   user_id: 6,
-  title: "Trying to find Doctor for son with autism",
+  title: "I had to leave the home that I'd spent thirty years building.",
   content: "I had to leave the home that I'd spent thirty years building. One day I just had to close the doors, turn the key, and leave everything behind. I'm seventy-two. No one wants to leave home at my age. But I left because I have six sons, and I knew one day the soldiers would come for them. My sons weren't political. They wanted nothing to do with killing, but that didn't matter. Good people and bad people were all being treated the same way. I watched soldiers take away the neighbors' boys with my own eyes. They were good boys. I'd known them their whole lives. But they were led away like sheep. They didn't even speak up because if they opened their mouths, they'd be shot. I knew it was only a matter of time before they came to our house. We left everything behind, but now my family is safe. So I am happy.",
-  photo:'https://static4.businessinsider.com/image/566eec7872f2c15d028b5612-1200/amman-jordan.jpg',
+  photo: 'https://static4.businessinsider.com/image/566eec7872f2c15d028b5612-1200/amman-jordan.jpg',
+)
+
+#7
+User.create(
+  name: "Uri Seif",
+  username: "uri_seif",
+  location: "Amman, Jordan",
+  bio: "Student moving to North Carolina soon.",
+  preferred_contact: "uriseif@gmail.com",
+  skills: "Student",
+  seeking: "Connections in North Carolina.",
+  resource_request: "Furniture, recommendations on schools in North Carolina.",
+  photo:'https://static5.businessinsider.com/image/566eed9172f2c15b028b5638-1200/amman-jordan.jpg',
+)
+Story.create(
+  user_id: 7,
+  title: "Because I'm a refugee, my life is on pause.",
+  content: "Because I’m a refugee, my life is on pause. My studies have stopped. I'm not working. I don't have a career. Because I'm Syrian, I'm not allowed to participate in society. It's been years of doing nothing. I used to be a cheerful person. I was always invited to parties. Now I like to be alone. I've become more nervous and aggressive. I yell over silly things. I just want to start my life again. I learned last Thursday that I'm going to a state called North Carolina. I'm very nervous. I know nothing about it. More than anything, I want to finish my education. But mostly I hope that whatever is waiting for me there is better than what I’ve gone through.",
+  photo:'https://static5.businessinsider.com/image/566eed9172f2c15b028b5638-1200/amman-jordan.jpg',
 )
